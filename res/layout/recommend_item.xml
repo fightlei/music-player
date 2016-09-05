@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+    
+    <LinearLayout 
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+    
+    <TextView 
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="哈哈"
+        android:textSize="16sp"
+        android:id="@+id/tv_recommend_item_songname"/>
+    <TextView 
+        android:layout_marginTop="5dp"
+         android:layout_marginLeft="20dp"
+         android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="哈哈"
+        android:id="@+id/tv_recommend_item_artist"/>
+    </LinearLayout>
+    <Button 
+        android:id="@+id/btn_recommend_download"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+         android:layout_marginBottom="5dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/recognizer_download_pressed"
+        android:layout_alignParentRight="true"/>
+    
+
+</RelativeLayout>

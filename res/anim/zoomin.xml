@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    android:interpolator="@android:anim/decelerate_interpolator" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <scale 
+        android:fromXScale="2.0"
+        android:toXScale="0.5"
+        android:fromYScale="2.0"
+        android:toYScale="0.5"
+        android:pivotX="50%p"
+        android:pivotY="50%p"
+        android:duration="2000"/>
+    <alpha 
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0"
+        android:duration="2000"/>
+    
+
+</set>
+
+<!-- 放大缩小效果 -->
+
+<!--alpha透明变化
+translate位置变化
+scale缩放
+rotate旋转  -->

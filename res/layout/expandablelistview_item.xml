@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView 
+        		android:layout_centerVertical="true"
+        android:id="@+id/tv_expandable_item_song_count"
+        android:layout_marginLeft="15dp"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="sfsfsdf"
+        />
+    <LinearLayout 
+
+		android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_expandable_item_song_count"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView 
+            android:id="@+id/tv_expandable_item_song_name"
+            android:layout_marginTop="8dp"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="ssdfss"
+        />
+        <TextView 
+            android:id="@+id/tv_expandable_item_song_artist"
+            android:layout_marginTop="5dp"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:text="sfsdfds"
+        android:layout_marginBottom="8dp"
+        />
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/iv_expandable_item_arrow"
+        android:layout_marginRight="15dp"
+        		android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:src="@drawable/down"/>
+    
+
+</RelativeLayout>

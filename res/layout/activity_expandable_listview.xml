@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	
+	android:id="@+id/ll_visibility_expandable_local_music"
+    android:orientation="vertical"
+>
+<!--     android:background="@drawable/background_play" -->
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3f000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >    
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/tiantinadongting"/>                 
+       
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:text="本地音乐"/>
+
+        
+         </LinearLayout>
+
+
+
+
+<!--     以上标题 -->
+   
+
+    <ExpandableListView 
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ExpandableListView>
+    
+
+    
+    
+</LinearLayout>

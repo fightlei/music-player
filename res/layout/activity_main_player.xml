@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_visibility_player_view"
+    android:background="@drawable/default_bg_hdpi" >
+    
+    <ViewFlipper 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/palyview_viewflipper">
+       
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    
+     <LinearLayout 
+        android:id="@+id/ll_visibility_tabhost_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_view_bottom"
+        android:orientation="vertical">
+
+    
+    <LinearLayout 
+        android:id="@+id/ll_titile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3f000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >    
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/tiantinadongting"/>                 
+       
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:text="天天动听"/>
+
+        
+         </LinearLayout>
+    
+    <!-- 以上标题头 -->
+    
+
+    
+    
+    
+    
+   
+    
+    <TabHost 
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+android:alpha="0.5"
+
+
+            android:orientation="horizontal" >
+</TabWidget>
+        <FrameLayout 
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_local_music"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+<!-- 以下本地音乐Btn -->
+               <LinearLayout 
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:background="@drawable/ll_btn_background"
+                   
+
+                   android:id="@+id/ll_btn_local_music">
+                   <ImageView 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginBottom="14dp"
+                       android:layout_marginLeft="20dp"
+                       android:background="@drawable/icon_local_music"/>
+             
+                   <TextView 
+                        android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:textSize="20sp"
+                       android:textColor="#ffffff"
+                       android:layout_marginLeft="20dp"
+                       android:text="本地音乐"
+                       />
+               </LinearLayout>
+               
+               <!-- 以下歌手+专辑 -->
+               <LinearLayout 
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+              <!-- 以下歌手Btn --> 
+               <LinearLayout 
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="160dp"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:background="@drawable/ll_btn_background"
+                   
+
+                   android:id="@+id/ll_btn_artist">
+                   <ImageView 
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:layout_marginTop="6dp"
+						                       android:layout_marginBottom="7dp"
+                       android:layout_marginLeft="20dp"
+                       android:background="@drawable/icon_artist_plus"/>
+                   <TextView 
+                        android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:textSize="17sp"
+                       android:textColor="#ffffff"
+                       android:layout_marginLeft="20dp"
+                       android:text="歌手"
+                       />
+               </LinearLayout>
+              
+              
+              <!-- 以下专辑Btn --> 
+               <LinearLayout 
+
+					
+					android:layout_marginLeft="20dp"
+                   android:layout_width="160dp"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:background="@drawable/ll_btn_background"
+                   
+
+                   android:id="@+id/ll_btn_special">
+
+                   <ImageView
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginTop="5dp"
+                       android:background="@drawable/icon_album_plus" />
+
+                   <TextView 
+                        android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:textSize="17sp"
+                       android:textColor="#ffffff"
+                       android:layout_marginLeft="20dp"
+                       android:text="专辑"
+                       />
+               </LinearLayout>
+               
+               
+               </LinearLayout>
+               
+               
+               
+               <LinearLayout 
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+              <!-- 以下我的最爱Btn --> 
+              
+               <LinearLayout 
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="160dp"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:background="@drawable/ll_btn_background"	
+                   
+
+                   android:id="@+id/ll_btn_my_favorite">
+                   <ImageView 
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:layout_marginBottom="7dp"
+                       android:layout_marginTop="6dp"
+                       android:layout_marginLeft="20dp"
+                       android:background="@drawable/icon_favourite_normal"/>
+                   <TextView 
+                        android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:textSize="17sp"
+                       android:textColor="#ffffff"
+                       android:layout_marginLeft="13dp"
+                       android:text="我的最爱"
+                       />
+               </LinearLayout>
+              <!-- 以下我的下载Btn --> 
+                <LinearLayout 
+                   android:layout_marginLeft="20dp"
+                   android:layout_width="160dp"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:background="@drawable/ll_btn_background"	
+                   
+
+                   android:id="@+id/ll_btn_my_dowload">
+                   <ImageView 
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginTop="3dp"
+                       android:layout_marginLeft="20dp"
+                       android:background="@drawable/icon_folder_plus"/>
+                   <TextView 
+                        android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:textSize="17sp"
+                       android:textColor="#ffffff"
+                       android:layout_marginLeft="13dp"
+                       android:text="我的下载"
+                       />
+               </LinearLayout>
+               
+               </LinearLayout>
+              
+              <!-- 以下最近播放Btn --> 
+                <LinearLayout 
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="160dp"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:background="@drawable/ll_btn_background"	
+                   
+
+                   android:id="@+id/ll_btn_recent_play">
+                   <ImageView 
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginTop="3dp"
+                       android:layout_marginLeft="20dp"
+                       android:background="@drawable/player_play"/>
+                   <TextView 
+                        android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:textSize="17sp"
+                       android:textColor="#ffffff"
+                       android:layout_marginLeft="13dp"
+                       android:text="最近播放"
+                       />
+               </LinearLayout>
+               
+               
+               
+               
+            </LinearLayout>
+            
+            
+            <!-- 以下第二个Tab -->
+            <LinearLayout 
+                android:id="@+id/ll_net_music"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ListView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lv_recommend"></ListView>
+            </LinearLayout>
+            
+            
+             <!-- 以下第三个Tab -->
+            <LinearLayout 
+                android:id="@+id/ll_test"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                   <Button 
+                         android:layout_alignParentRight="true"
+                         android:id="@+id/btn_search"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/icon_search"
+                    />
+                   <EditText 
+                       android:layout_toLeftOf="@id/btn_search"
+                       android:id="@+id/et_search_song"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+                     
+                </RelativeLayout>
+                <ListView 
+                    android:id="@+id/lv_search_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ListView>
+               
+            </LinearLayout>
+            
+            
+            
+            
+            
+        </FrameLayout>
+        
+        </LinearLayout>
+    </TabHost>
+    
+    
+    
+    
+    </LinearLayout>
+    
+        <!-- 以下底部显示 -->
+    
+    <LinearLayout 
+        android:id="@+id/ll_view_bottom"
+        android:layout_width="match_parent"
+		android:layout_alignParentBottom="true"
+        android:layout_height="64dp"
+        android:background="#3f000000"
+        android:orientation="vertical"
+        
+        >
+            <ProgressBar
+        android:id="@+id/pbar_music_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:progress="75"
+        android:max="100"
+        android:maxHeight="2.0dip"
+        android:minHeight="2.0dip"
+        />
+
+        
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        
+        >
+        
+        <ImageView 
+            android:id="@+id/iv_bottom_map"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            />
+        <LinearLayout 
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView 
+                android:id="@+id/tv_music_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="16dp"
+                android:text="歌名"
+                />
+            <TextView 
+                android:id="@+id/tv_music_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="3dp"
+                android:text="歌手名"
+                />
+            
+        </LinearLayout>
+        
+        <Button 
+            
+            android:id="@+id/btn_btn_start_or_pause"
+            android:layout_gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+ 
+            android:background="@drawable/icon_play_normal"
+            />
+        <Button 
+            android:id="@+id/btn_next_songs"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_next_song_background"
+            />
+        
+       </LinearLayout>
+        
+    </LinearLayout>
+    </RelativeLayout>
+
+    
+       <!-- 分页第二页 -->
+       <ScrollView 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           
+       
+    
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+    <LinearLayout 
+        android:layout_width="match_parent"
+           android:layout_height="400dp"
+           android:orientation="horizontal"
+        >
+        <ImageView 
+            android:layout_marginLeft="20dp"
+            android:id="@+id/iv_bag1"
+              android:layout_width="200dp"
+              android:layout_height="match_parent"
+              android:src="@drawable/back1"/>
+        <ImageView 
+            android:id="@+id/iv_bag2"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+              android:layout_width="200dp"
+              android:layout_height="match_parent"
+              android:src="@drawable/back2"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+           android:layout_height="400dp"
+           android:orientation="horizontal"
+        >
+        <ImageView 
+            android:layout_marginLeft="20dp"
+            android:id="@+id/iv_bag3"
+              android:layout_width="200dp"
+              android:layout_height="match_parent"
+              android:src="@drawable/back3"/>
+        <ImageView 
+            android:id="@+id/iv_bag4"
+            android:layout_marginLeft="40dp"
+              android:layout_width="200dp"
+              android:layout_height="match_parent"
+              android:src="@drawable/back4"/>
+        
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+           android:layout_height="400dp"
+           android:orientation="horizontal"
+        >
+        <ImageView 
+            android:layout_marginLeft="20dp"
+            android:id="@+id/iv_default"
+              android:layout_width="200dp"
+              android:layout_height="match_parent"
+              android:src="@drawable/default_bg_hdpi"/>
+        
+    </LinearLayout>
+    
+          
+       </LinearLayout>
+       </ScrollView>
+    </ViewFlipper>
+    
+
+</RelativeLayout>
